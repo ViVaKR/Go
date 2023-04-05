@@ -14,7 +14,8 @@
     # Create new go module `example/hello`
     # make project directory
     mkdir ~/example/hello # (windows) `md "%HOMEPATH%\example/hello"
-    go mod init example/hello # project init
+    go mod init example/hello # project mod init
+    
     cd ~/example/hello # move the project directory
     touch hello.go # go file
     code . # open editor vscode
@@ -39,8 +40,12 @@
 - 실행 (Run)
 
 ```bash
-    go run .
+    
+    go run . 
     # Hello, World!
     
-    go help
+    go build # created excute file
+    
+    ./hello # excute hello
+    
 ```
