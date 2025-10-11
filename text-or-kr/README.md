@@ -1,40 +1,5 @@
 # Go
 
-> Great Backend Language
->
-> Excels at Concurrency
->
-> Easy to Understand
->
-> Many Built-in Freatures
->
-> Strong Typing
->
-> Memory Freed Automatically
->
-> Fast Compile Times
->
-> Cross Platform
->
-> Statically typed, Compiled language"
->
-> Go has built-in testing support
->
-> Go is an object-orented language (in it's own way)
->
-
-- Variables, functions, arrays, loops etc.
-
----
-
-## 다운로드 및 설치 ( Download & Installation )
-
-1. [Go](https://go.dev/doc/install)
-2. [Git](https://git-scm.com/),  [Github](https://github.com/)
-3. [Visual Studio Code](https://code.visualstudio.com/)
-
----
-
 ## 시작 (Start)
 
 - 초기화 (initialize)
@@ -44,44 +9,21 @@
     # make project directory
     mkdir ~/example/hello # (windows) `md "%HOMEPATH%\example/hello"
     go mod init example/hello # project mod init
-    
+
     cd ~/example/hello # move the project directory
     touch hello.go # create go demo file
     code . # open editor vscode
-    
     go version # 설치 후 확인
-    
     go env # 환경설정 보기
 ```
-
-- Paste the follwing code into your `hello.go` file and save the file.
-
-```go
-    package main
-
-    import "fmt"
-
-    func main() {
-        fmt.Println("Hello, World!")
-    }
-```
-
----
 
 - 실행 (Run)
 
 ```bash
-    
-    go run . 
-    # Hello, World!
-    
-    # 윈도우 용 -> $ Env:GOOS = "windows"
-    # 리눅스 용 -> $ Env:GOOS = "linux"
-    # 맥용     -> $ Env:GOOS = "darwin"
-    go build # created excute file (this os)
-    
+
+    go run .
     ./hello # excute hello
-    
+
 ```
 
 ---
@@ -99,7 +41,7 @@ import ("bufio" "fmt" "log" "os")
 var pl = fmt.Println
 // Entry point -> main function
 func main() {
-    
+
     pl("What is your name?")
 
     reader := bufio.NewReader(os.Stdin)
@@ -154,7 +96,7 @@ import (
 var pl = fmt.Println
 
 func main() {
- 
+
  // Default type : int, float64, bool, string, rune
  pl(reflect.TypeOf(25)) // int
  pl(reflect.TypeOf(3.14)) // float64
